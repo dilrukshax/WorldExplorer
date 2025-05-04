@@ -95,7 +95,7 @@ A comprehensive web application that allows users to explore countries around th
    ```bash
    git clone https://github.com/your-username/countries-app.git
    cd countries-app/backend
-````
+
 
 2. **Install dependencies**
 
