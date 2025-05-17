@@ -6,8 +6,14 @@ const config = require("./config/config");
 
 const app = express();
 
-// CORS configuration
-app.use(cors(config.cors));
+const corsOptions = {
+  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+
 
 // Parse requests
 app.use(express.json());
