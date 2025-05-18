@@ -2,9 +2,12 @@ import axios from "axios";
 
 const API_URL = "https://worldexplorer-api.vercel.app/api/auth/";
 
-
-// Configure axios to include credentials
+// Option 1: Keep using credentials (recommended if you need cookies)
 axios.defaults.withCredentials = true;
+
+// Option 2 (alternative): Remove credentials and use token-based auth only
+// Remove this line if you choose option 2
+// axios.defaults.withCredentials = true;
 
 const signup = (username, email, password) => {
   return axios.post(API_URL + "signup", {
