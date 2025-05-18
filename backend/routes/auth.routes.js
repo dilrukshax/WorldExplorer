@@ -10,6 +10,7 @@ module.exports = function(app) {
     res.sendStatus(200);
   });
   
+  
   app.post("/api/auth/signin", controller.signin);
   app.post("/api/auth/signout", controller.signout);
 };
