@@ -6,14 +6,8 @@ const config = require("./config/config");
 
 const app = express();
 
-const corsOptions = {
-  origin: process.env.CLIENT_URL,
-  credentials: true,
-  optionsSuccessStatus: 200
-};
-
-app.use(cors(corsOptions));
-
+// CORS configuration
+app.use(cors(config.cors));
 
 // Parse requests
 app.use(express.json());
