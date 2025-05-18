@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://worldexplorer-api.vercel.app/api/auth/";
+const API_URL = "http://localhost:8080/api/auth/";
 
 
 // Configure axios to include credentials
