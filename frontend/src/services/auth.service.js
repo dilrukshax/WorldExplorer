@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://cors-anywhere.herokuapp.com/https://worldexplorer-api.vercel.app/api/auth/";
+const API_URL = "https://worldexplorer-api.vercel.app/api/auth/";
 
 
 // Configure axios to include credentials
