@@ -34,7 +34,7 @@ const config = {
   
   // CORS settings
   cors: {
-    origin: process.env.CLIENT_URL || 'http://localhost:3000',
+    origin: process.env.CLIENT_URL || 'https://world-explorer-eight.vercel.app',
     credentials: true
   }
 };
