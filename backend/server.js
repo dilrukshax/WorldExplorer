@@ -6,21 +6,8 @@ const config = require("./config/config");
 
 const app = express();
 
-const cors = require('cors');
-
-// Set up CORS with specific options
-const corsOptions = {
-  origin: 'https://world-explorer-eight.vercel.app',
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
-};
-
-app.use(cors(corsOptions));
-
-// For preflight requests
-app.options('*', cors(corsOptions));
-
+// CORS configuration
+app.use(cors(config.cors));
 
 // Parse requests
 app.use(express.json());
